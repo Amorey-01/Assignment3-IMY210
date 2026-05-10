@@ -42,7 +42,7 @@ const { data, pending } = await useFetch(
 const post = computed(() => {
   const items = data.value?.data ?? []
   if (items.length === 0) return null
-  return { id: items[0].id, ...items[0].attributes }
+  return { ...items[0] }
 })
 
 const renderedContent = computed(() =>

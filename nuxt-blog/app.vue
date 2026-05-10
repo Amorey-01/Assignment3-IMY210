@@ -8,6 +8,8 @@
 </template>
 
 <style>
+@import './app/assets/css/main.css';
+
 * {
   box-sizing: border-box;
   margin: 0;

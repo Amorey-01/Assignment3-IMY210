@@ -17,22 +17,18 @@
     "author": {
       "type": "string"
     },
-    "content": {
-      "type": "blocks"
-    },
-    "Enumeration": {
-      "type": "enumeration",
-      "enum": [
-        "Tech",
-        "Lifestyle",
-        "Travel",
-        "Cooking & Baking",
-        "Gaming"
-      ]
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "category": {
+      "type": "string"
+    },
+    "snippet": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

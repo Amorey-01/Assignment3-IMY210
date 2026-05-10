@@ -55,7 +55,7 @@ const base = config.public.strapiBase
 const { data, pending } = await useFetch(`${base}/api/posts?populate=*`)
 
 const posts = computed(() =>
-  (data.value?.data ?? []).map(item => ({ id: item.id, ...item.attributes }))
+  (data.value?.data ?? []).map(item => ({ ...item }))
 )
 
 const selectedCategory = ref('')
@@ -246,5 +246,11 @@ select:focus {
   text-align: center;
   padding: 3rem 0;
   font-size: 0.95rem;
+}
+
+.post-card,
+.post-card * {
+  text-decoration: none;
+  color: inherit;
 }
 </style>

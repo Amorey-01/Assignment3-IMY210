@@ -65,7 +65,7 @@ const base = config.public.strapiBase
 const { data, pending } = await useFetch(`${base}/api/posts?populate=*`)
 
 const posts = computed(() =>
-  (data.value?.data ?? []).map(item => ({ id: item.id, ...item.attributes }))
+  (data.value?.data ?? []).map(item => ({ ...item }))
 )
 
 const query = ref('')
