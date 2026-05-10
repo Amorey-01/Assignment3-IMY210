@@ -1,8 +1,7 @@
 # Reflection — IMY 210 Assignment 3
 
 ## GitHub Repository
-[paste your GitHub repo link here]
-
+https://github.com/Amorey-01/Assignment3-IMY210
 ## Experience
 
 Working with Docker and Strapi for the first time was both challenging and rewarding. 
